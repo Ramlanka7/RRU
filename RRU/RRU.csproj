@@ -146,6 +146,7 @@
     <Content Include="src\app\Footer\Footer.html" />
     <Content Include="src\app\Footer\Login.html" />
     <Content Include="src\app\Header\Header.html" />
+    <Content Include="src\app\Home\Home.html" />
     <Content Include="src\tsconfig.json" />
     <Content Include=".editorconfig" />
     <Content Include=".travis.yml" />
@@ -193,6 +194,7 @@
     <TypeScriptCompile Include="src\app\Footer\Footer.ts" />
     <TypeScriptCompile Include="src\app\Footer\Login.ts" />
     <TypeScriptCompile Include="src\app\Header\Header.ts" />
+    <TypeScriptCompile Include="src\app\Home\Home.ts" />
     <TypeScriptCompile Include="src\main.ts" />
   </ItemGroup>
   <ItemGroup>

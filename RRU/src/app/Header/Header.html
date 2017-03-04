@@ -1,4 +1,4 @@
-﻿<div class="container" style="margin-bottom: -20px;">
+﻿<div class="container">
     <div id="navbar" class="navbar navbar-default">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -11,23 +11,13 @@
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
-                <li>Home</li>
-                <li>Search</li>
-                <li>Advertise Free</li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Search</a></li>
+                <li><a href="#">Advertise Free</a></li>
                 <li>
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Account<span class="caret"></span></a>
                     <ul class="dropdown-menu" role="menu">
-                        <!--@if (Request.IsAuthenticated)
-                        {
-                        <li>@Html.ActionLink("My Dashboard", "Dashboard", "Home")</li>
-                        if (Roles.IsUserInRole("Owner"))
-                        {
-                        <li>@Html.ActionLink("List A Property", "Create", "Item")</li>
-                        }
-                        <li>@Html.ActionLink("Sign Out", "Signout", "Account")</li>
-                        }
-                        else
-                        {-->
+
                         <li>&nbsp;Login as</li>
                         <li role="presentation" class="divider"></li>
                         <li>Owner</li>
@@ -35,7 +25,6 @@
                         <li role="presentation" class="divider"></li>
                         <li>&nbsp;Not a Member ?</li>
                         <li>Register</li>
-                        <!--}-->
                     </ul>
             </ul>
         </div>
