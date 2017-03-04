@@ -143,10 +143,17 @@
     <Content Include="src\app\Footer\Contact.html" />
     <Content Include="src\app\Errors\PageNotFound.html" />
     <Content Include="src\app\Footer\AdvertiseFree.html" />
+    <Content Include="src\app\Footer\EqualHousingOpportunity.html" />
     <Content Include="src\app\Footer\Footer.html" />
+    <Content Include="src\app\Footer\Help.html" />
     <Content Include="src\app\Footer\Login.html" />
+    <Content Include="src\app\Footer\Privacy.html" />
+    <Content Include="src\app\Footer\Sitemap.html" />
+    <Content Include="src\app\Footer\TermsOfUse.html" />
+    <Content Include="src\app\Footer\WhyRentersRus.html" />
     <Content Include="src\app\Header\Header.html" />
     <Content Include="src\app\Home\Home.html" />
+    <Content Include="src\app\Home\Search.html" />
     <Content Include="src\tsconfig.json" />
     <Content Include=".editorconfig" />
     <Content Include=".travis.yml" />
@@ -191,10 +198,17 @@
     <TypeScriptCompile Include="src\app\Footer\Contact.ts" />
     <TypeScriptCompile Include="src\app\Errors\PageNotFound.ts" />
     <TypeScriptCompile Include="src\app\Footer\AdvertiseFree.ts" />
+    <TypeScriptCompile Include="src\app\Footer\EqualHousingOpportunity.ts" />
     <TypeScriptCompile Include="src\app\Footer\Footer.ts" />
+    <TypeScriptCompile Include="src\app\Footer\Help.ts" />
     <TypeScriptCompile Include="src\app\Footer\Login.ts" />
+    <TypeScriptCompile Include="src\app\Footer\Privacy.ts" />
+    <TypeScriptCompile Include="src\app\Footer\Sitemap.ts" />
+    <TypeScriptCompile Include="src\app\Footer\TermsOfUse.ts" />
+    <TypeScriptCompile Include="src\app\Footer\WhyRentersRus.ts" />
     <TypeScriptCompile Include="src\app\Header\Header.ts" />
     <TypeScriptCompile Include="src\app\Home\Home.ts" />
+    <TypeScriptCompile Include="src\app\Home\Search.ts" />
     <TypeScriptCompile Include="src\main.ts" />
   </ItemGroup>
   <ItemGroup>
