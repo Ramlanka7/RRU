@@ -107,6 +107,11 @@
     <Content Include="bin\Microsoft.ApplicationInsights.dll" />
     <Content Include="bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll" />
     <Content Include="bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml" />
+    <Content Include="Content\bootstrap-theme.css" />
+    <Content Include="Content\bootstrap-theme.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="karma-test-shim.js" />
     <Content Include="karma.conf.js" />
     <Content Include="non-essential-files.osx.txt" />
@@ -119,8 +124,28 @@
     <Content Include="obj\Debug\build.force" />
     <Content Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
     <Content Include="protractor.config.js" />
-    <Content Include="src\app\About\about.component.html" />
-    <Content Include="src\app\Contact\Contact.component.html" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\bootstrap.min.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Content\bootstrap-theme.min.css.map" />
+    <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <None Include="Scripts\jquery-3.1.1.intellisense.js" />
+    <Content Include="Scripts\jquery-3.1.1.js" />
+    <Content Include="Scripts\jquery-3.1.1.min.js" />
+    <Content Include="Scripts\jquery-3.1.1.slim.js" />
+    <Content Include="Scripts\jquery-3.1.1.slim.min.js" />
+    <Content Include="src\app\Footer\About.html" />
+    <Content Include="src\app\Footer\Contact.html" />
+    <Content Include="src\app\Errors\PageNotFound.html" />
+    <Content Include="src\app\Footer\AdvertiseFree.html" />
+    <Content Include="src\app\Footer\Footer.html" />
+    <Content Include="src\app\Footer\Login.html" />
+    <Content Include="src\app\Header\Header.html" />
     <Content Include="src\tsconfig.json" />
     <Content Include=".editorconfig" />
     <Content Include=".travis.yml" />
@@ -131,6 +156,8 @@
     <Content Include="package.json" />
     <Content Include="README.md" />
     <Content Include="tslint.json" />
+    <Content Include="Scripts\jquery-3.1.1.slim.min.map" />
+    <Content Include="Scripts\jquery-3.1.1.min.map" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -156,11 +183,16 @@
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="e2e\app.e2e-spec.ts" />
-    <TypeScriptCompile Include="src\app\About\about.component.ts" />
+    <TypeScriptCompile Include="src\app\Footer\About.ts" />
     <TypeScriptCompile Include="src\app\app.component.spec.ts" />
     <TypeScriptCompile Include="src\app\app.component.ts" />
     <TypeScriptCompile Include="src\app\app.module.ts" />
-    <TypeScriptCompile Include="src\app\Contact\Contact.component.ts" />
+    <TypeScriptCompile Include="src\app\Footer\Contact.ts" />
+    <TypeScriptCompile Include="src\app\Errors\PageNotFound.ts" />
+    <TypeScriptCompile Include="src\app\Footer\AdvertiseFree.ts" />
+    <TypeScriptCompile Include="src\app\Footer\Footer.ts" />
+    <TypeScriptCompile Include="src\app\Footer\Login.ts" />
+    <TypeScriptCompile Include="src\app\Header\Header.ts" />
     <TypeScriptCompile Include="src\main.ts" />
   </ItemGroup>
   <ItemGroup>

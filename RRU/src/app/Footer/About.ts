@@ -3,7 +3,7 @@
 @Component({
     moduleId: module.id,
     selector: 'my-app',
-    templateUrl: 'about.component.html'
+    templateUrl: 'About.html'
 })
 export class AboutComponent implements OnInit {
 

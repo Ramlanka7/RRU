@@ -3,7 +3,7 @@
 @Component({
     moduleId : module.id,
     selector : 'my-app',
-    template : 'contact.component.html'  
+    template : 'Contact.html'  
 })
 
 export class ContactComponent {

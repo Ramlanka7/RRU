@@ -1,20 +1,30 @@
-import { NgModule }       from '@angular/core';
-import { BrowserModule }  from '@angular/platform-browser';
-import { AppComponent }   from './app.component';
-import { AboutComponent } from './About/about.component';
-import { ContactComponent } from './Contact/contact.component';
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { AppComponent } from './app.component';
+import { AboutComponent } from './Footer/About';
+import { ContactComponent } from './Footer/Contact';
+import { HeaderComponent } from './Header/Header';
+import { FooterComponent } from './Footer/Footer';
+import { AdvertiseFreeComponent } from './Footer/AdvertiseFree';
+import { LoginComponent } from './Footer/Login';
+import { PageNotFoundComponent } from './Errors/PageNotFound';
 import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
-    { path: '', redirectTo: '/index', pathMatch: 'full' },
-    { path: 'about.component', component: AboutComponent },
-    { path: 'contact.component', component: ContactComponent }
+    { path: '', component: PageNotFoundComponent },
+    { path: 'About', component: AboutComponent },
+    { path: 'Contact', component: ContactComponent },
+    { path: 'AdvertiseFree', component: AdvertiseFreeComponent },
+    { path: 'Login', component: LoginComponent },
+    { path: 'Header', component: HeaderComponent },
+    { path: 'Footer', component: FooterComponent },
+    { path: '', component: HeaderComponent, outlet: 'header' },
+    { path: '', component: FooterComponent, outlet: 'footer' }
 ];
 
-
 @NgModule({
-    imports: [BrowserModule, RouterModule.forRoot(routes) ],
-  declarations: [ AppComponent, AboutComponent, ContactComponent ],
-  bootstrap:    [ AppComponent ]
+    imports: [BrowserModule, RouterModule.forRoot(routes, { useHash: true })],
+    declarations: [AppComponent, AboutComponent, ContactComponent, HeaderComponent, FooterComponent, AdvertiseFreeComponent, LoginComponent, PageNotFoundComponent],
+    bootstrap: [AppComponent]
 })
 export class AppModule { }
