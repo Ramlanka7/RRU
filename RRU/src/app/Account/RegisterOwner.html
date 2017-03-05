@@ -15,15 +15,21 @@
                 <div class="form-group row">
                     <div class="col-md-4">
                         Owner Type
-                        <select class="form-control">
-                            <option value="Existing">Existing Owner</option>
-                            <option value="New">New Owner</option>
+                        <select name="role" class="form-control" [(ngModel)]="selectedOwnerType">
+                            <option *ngFor="let type of ownerTypes" [value]="type.value">
+                                {{type.display}}
+                            </option>
                         </select>
                     </div>
                     <div class="col-md-1"></div>
-                    <div class="col-md-4">
+                    <div class="col-md-4" *ngIf="selectedOwnerType != ''">
                         Owner Name
-                        <input type="text" class="form-control" placeholder="Owner Name" />
+                        <input type="text" class="form-control" placeholder="Owner Name" *ngIf="selectedOwnerType == 'new'" />
+                        <select name="role" class="form-control" *ngIf="selectedOwnerType == 'existing'">
+                            <option *ngFor="let owner of owners" [value]="owner.value">
+                                {{owner.name}}
+                            </option>
+                        </select>
                     </div>
                 </div>
 
