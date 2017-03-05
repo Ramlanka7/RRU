@@ -25,7 +25,7 @@
                     <div class="col-md-4" *ngIf="selectedOwnerType != ''">
                         Owner Name
                         <input type="text" class="form-control" placeholder="Owner Name" *ngIf="selectedOwnerType == 'new'" />
-                        <select name="role" class="form-control" *ngIf="selectedOwnerType == 'existing'">
+                        <select name="role" class="form-control" *ngIf="selectedOwnerType == 'existing'" [(ngModel)]="selectedOwner">
                             <option *ngFor="let owner of owners" [value]="owner.value">
                                 {{owner.name}}
                             </option>
