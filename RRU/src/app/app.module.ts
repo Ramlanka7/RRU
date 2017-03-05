@@ -13,7 +13,10 @@ import { SitemapComponent } from './Footer/Sitemap';
 import { WhyRentersRusComponent } from './Footer/WhyRentersRus';
 import { TermsOfUseComponent } from './Footer/TermsOfuse';
 import { ContactComponent } from './Footer/Contact';
-import { LoginComponent } from './Footer/Login';
+import { LoginComponent } from './Account/Login';
+import { RegisterComponent } from './Account/Register';
+import { RegisterRenterComponent } from './Account/RegisterRenter';
+import { RegisterOwnerComponent } from './Account/RegisterOwner';
 import { PageNotFoundComponent } from './Errors/PageNotFound';
 import { RouterModule, Routes } from '@angular/router';
 
@@ -29,6 +32,9 @@ const routes: Routes = [
     { path: 'Contact', component: ContactComponent },
     { path: 'AdvertiseFree', component: AdvertiseFreeComponent },
     { path: 'Login', component: LoginComponent },
+    { path: 'Register', component: RegisterComponent },
+    { path: 'RegisterRenter', component: RegisterRenterComponent },
+    { path: 'RegisterOwner', component: RegisterOwnerComponent },
     { path: 'Header', component: HeaderComponent },
     { path: 'Footer', component: FooterComponent },
     { path: '', component: HeaderComponent, outlet: 'header' },
@@ -41,7 +47,9 @@ const routes: Routes = [
     declarations: [AppComponent, HomeComponent, PrivacyComponent, HelpComponent,
         SitemapComponent, WhyRentersRusComponent, TermsOfUseComponent, SearchComponent,
         AboutComponent, ContactComponent, HeaderComponent, FooterComponent,
-        AdvertiseFreeComponent, LoginComponent, PageNotFoundComponent],
+        AdvertiseFreeComponent, LoginComponent,
+        RegisterComponent, RegisterRenterComponent, RegisterOwnerComponent,
+        PageNotFoundComponent],
     bootstrap: [AppComponent]
 })
 export class AppModule { }
