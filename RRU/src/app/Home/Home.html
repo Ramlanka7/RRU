@@ -1,4 +1,53 @@
-﻿
+﻿<section id="main-slider" style="padding: 6% 0; width: 100%">
+ <div class="container-fluid">
+           <div class="row">
+            <div class="col-md-4 col-md-offset-4 mainWindow">
+                <div style="margin-bottom: 10px; margin-top: 10px;">
+                    <div style="margin-bottom: 10px">
+                        <div class="mainTitle">Great rentals one location</div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="City, State or Zip Code"/> 
+                            <span class="input-group-addon">
+                                <span class="glyphicon glyphicon-search white" id="search"></span>
+                            </span>
+                        </div>
+                        <div class="row mainSearch hidden-xs">
+
+                            <div class="col-md-4">
+                                <h5>Bedrooms</h5>
+                                <div class="dropdown">
+                                    <!--@Html.DropDownListFor(m => m.RentalSearchEntry.Bedrooms, Model.RentalSearchEntry.BedRoomsList, new { @class = "form-control" })-->
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <h5>Bathrooms</h5>
+                                <div class="dropdown">
+                                    <!--@Html.DropDownListFor(m => m.RentalSearchEntry.Bathrooms, Model.RentalSearchEntry.BathRoomsList, new { @class = "form-control" })-->
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <h5>Max Rent</h5>
+                                <div class="dropdown">
+                                    <!--@Html.TextBoxFor(m => m.RentalSearchEntry.MaxPrice, new { @id = "MaxRent", @class = "form-control", @placeholder = "$$$" })-->
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-12" style="margin-top: 10px">
+                                <!--<span class="pull-right"><a href="#myModal" data-toggle="modal">Advanced Search</a></span>-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>
 <section class="homePageHeader">
     <div class="container MarginTopTwenty ">
         <br />
@@ -46,11 +95,11 @@
             </div>
             <div class="col-md-2"></div>
         </div>
-        <!--<div class="row">
+        <div class="row">
             <div class="col-md-12">
-                <img src="~/Images/HomePageSearch.png" class="img-responsive" alt="Desktop, Ipad and Mobile Image" />
+                <img src="../../../Images/HomePageSearch.png" class="img-responsive" alt="Desktop, Ipad and Mobile Image"/>
             </div>
-        </div>-->
+        </div>
     </div>
     <br />
 </section>

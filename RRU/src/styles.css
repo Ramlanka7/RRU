@@ -9,7 +9,7 @@ a{-moz-transition:300ms;-o-transition:300ms;-webkit-transition:300ms;color:#52b6
 a:hover,
 a:focus{color:#80c9f1;outline:none;text-decoration:none;}
 #header{height:60px;left:0;position:fixed;top:0;width:100%;z-index:1000;}
-#main-slider{background-image:url(../Images/RentImages/Home/Image3.jpg);background-position:50% 50%;background-repeat:no-repeat;background-size:cover;color:#fff;margin-top:80px;}
+#main-slider{background-image:url(../Images/RentImages/Home/Image3.jpg);background-position:50% 50%;background-repeat:no-repeat;background-size:100%;color:#fff;}
 #main-slider .item{-moz-transition:opacity ease-in-out 500ms;-o-transition:opacity ease-in-out 500ms;-webkit-transition:opacity ease-in-out 500ms;display:block !important;left:0 !important;opacity:0;position:absolute;text-align:center;top:0;transition:opacity ease-in-out 500ms;width:100%;z-index:1;}
 #main-slider .item:first-child{position:relative;top:auto;}
 #main-slider .item.active{-moz-transition:opacity ease-in-out 500ms;-o-transition:opacity ease-in-out 500ms;-webkit-transition:opacity ease-in-out 500ms;opacity:1;transition:opacity ease-in-out 500ms;z-index:2;}
@@ -60,7 +60,7 @@ a:focus{color:#80c9f1;outline:none;text-decoration:none;}
 .carousel.scale .active .row > div:nth-child(4){-moz-animation:scaleUp 200ms linear 400ms both;-ms-animation:scaleUp 200ms linear 400ms both;-o-animation:scaleUp 200ms linear 400ms both;-webkit-animation:scaleUp 200ms linear 400ms both;animation:scaleUp 200ms linear 400ms both;}
 .navbar-default{background:#fff;border:0;border-radius:0 0 5px 5px;padding:0;}
 .navbar-default .first a{border-radius:0 0 0 5px;}
-.navbar-default .navbar-brand{background:url(../Images/Logo.png) no-repeat 0 50%;height:80px;margin-left:20px;margin-right:2px;width:160px;}
+.navbar-default .navbar-brand{background:url(../Images/Logo.png) no-repeat 0 50%;height:80px;margin-right:2px;width:160px;}
 .slog{color:#52b6ec !important;display:block;font-size:19px !important;letter-spacing:-1px;line-height:1.3em;padding-left:130px !important;padding-top:29px !important;text-transform:inherit;}
 .navbar-default .navbar-nav > li{margin-left:1px;}
 .navbar-default .navbar-nav > li > a{color:#555;font-size:16px;line-height:18px;padding:30px 25px;}
