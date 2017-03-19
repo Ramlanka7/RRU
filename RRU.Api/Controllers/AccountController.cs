@@ -20,7 +20,7 @@ using RRU.Api.Results;
 
 namespace RRU.Api.Controllers
 {
-    [Authorize]
+   // [Authorize]
     [RoutePrefix("api/Account")]
     public class AccountController : ApiController
     {
@@ -52,6 +52,7 @@ namespace RRU.Api.Controllers
 
         public ISecureDataFormat<AuthenticationTicket> AccessTokenFormat { get; private set; }
 
+        [Route("GetUserDetails")]
         public UserInfoViewModel GetUserDetails()
         {
             return new UserInfoViewModel
@@ -60,6 +61,13 @@ namespace RRU.Api.Controllers
                 HasRegistered = true,
                 LoginProvider = null
             };
+        }
+
+        [AllowAnonymous]
+        [Route("RegisterRenter")]
+        public bool RegisterRenter(RegisterRenterViewModel registerRenterViewModel)
+        {
+            return false;
         }
 
         // GET api/Account/UserInfo

@@ -1,6 +1,8 @@
 ﻿<div class="row">
     <div class="panel panel-default">
         <div class="panel-heading">Renter Registration</div>
+
+        <!--<form #registerRenterForm="ngForm">-->
         <div class="panel-body">
             <div class="form-group row">
                 <div class="col-sm-12 labelNormal">
@@ -9,99 +11,111 @@
                     </div>
                 </div>
             </div>
-      
-                <div class="form-group row">
-                    <div class="col-md-4">
-                        FirstName
-                        <input type="text" class="form-control" placeholder="First Name" />
-                    </div>
-                    <div class="col-md-1"></div>
 
-                    <div class="col-md-4">
-                        LastName
-                        <input type="text" class="form-control" placeholder="Last Name" />
-                    </div>
+            <div class="form-group row">
+                <div class="col-md-4">
+                    First Name
+                    <input type="text" class="form-control" name="firstName" placeholder="First Name" [(ngModel)]="firstName" required />
                 </div>
+                <div class="col-md-1"></div>
 
-                <div class="form-group row">
-                    <div class="col-md-4">
-                        User Name
-                        <input type="text" class="form-control" placeholder="E-mail Address" />
-                    </div>
-                    <div class="col-md-1">
-                    </div>
-                    <div class="col-sm-4">
-                        Phone Number
-                        <input type="text" class="form-control" placeholder="Phone Number" />
-                    </div>
+                <div class="col-md-4">
+                    Last Name
+                    <input type="text" class="form-control" placeholder="Last Name" [(ngModel)]="lastName" required />
                 </div>
+            </div>
 
-                <div class="form-group row">
-                    <div class="col-md-4">
-                        Password
-                        <input type="text" class="form-control" placeholder="Password" />
-                    </div>
-                    <div class="col-md-1">
-                    </div>
-                    <div class="col-sm-4">
-                        Confirm Password
-                        <input type="text" class="form-control" placeholder="Confirm Password" />
-                    </div>
+            <div class="form-group row">
+                <div class="col-md-4">
+                    User Name
+                    <input type="text" class="form-control" placeholder="E-mail Address" [(ngModel)]="email" required />
                 </div>
-
-                <div class="form-group row">
-                    <div class="col-md-4">
-                        Expected Move-in Date
-                        <input type="text" class="form-control" placeholder="MM/DD/YYYY" />
-                    </div>
-                    <div class="col-md-1">
-                    </div>
-                    <div class="col-sm-4">
-                        <label class="control-label labelNormal">How did you hear about us ?</label>
-
-                        <input type="text" class="form-control" placeholder="" />
-                    </div>
+                <div class="col-md-1">
                 </div>
-
-                <div class="form-group row">
-                    <div class="col-sm-4">
-                        Street Address
-                        <input type="text" class="form-control" placeholder="Address Line 1" /> 
-                    </div>
-                    <div class="col-md-1">
-                    </div>
-                    <div class="col-sm-4">
-                        Street Address 2
-                        <input type="text" class="form-control" placeholder="Address Line 2" />
-                    </div>
+                <div class="col-sm-4">
+                    Phone Number
+                    <input type="text" class="form-control" placeholder="Phone Number" [(ngModel)]="phoneNumber" required />
                 </div>
+            </div>
 
-                <div class="form-group row">
-                    <div class="col-sm-4">
-                        City
-                        <input type="text" class="form-control" placeholder="City" />
-                    </div>
-                    <div class="col-md-1">
-                    </div>
-                    <div class="col-sm-4">
-                        State
-                        <input type="text" class="form-control" placeholder="State" />
-                    </div>
+            <div class="form-group row">
+                <div class="col-md-4">
+                    Password
+                    <input type="password" class="form-control" placeholder="Password" [(ngModel)]="password" required />
                 </div>
+                <div class="col-md-1">
+                </div>
+                <div class="col-sm-4">
+                    Confirm Password
+                    <input type="password" class="form-control" placeholder="Confirm Password" [(ngModel)]="confirmPassword" required />
+                </div>
+            </div>
 
-                <div class="form-group row">
-                    <div class="col-sm-4">
-                        Zip Code
-                        <input type="text" class="form-control" placeholder="99999" />
-                    </div>
-                    <div class="col-md-1">
-                    </div>
-                    <div class="col-sm-6" style="margin-top: 25px;">
-                        <button type="submit" id="btCreateAccount" class="btn btn-primary">Create Account</button>
-                        <button type="button" id="btResetForm" class="btn btn-default">Reset Form</button>
-                    </div>
+            <div class="form-group row">
+                <div class="col-md-4">
+                    Expected Move-in Date
+                    <input type="text" class="form-control" placeholder="MM/DD/YYYY" [(ngModel)]="moveInDate" />
                 </div>
-           
+                <div class="col-md-1">
+                </div>
+                <div class="col-sm-4">
+                    <label class="control-label labelNormal">How did you hear about us ?</label>
+                    <select id="power" class="form-control"
+                            name="power"
+                            [(ngModel)]="hearUs" required>
+                        <option *ngFor="let p of hearUsOptions" [value]="p">{{p}}</option>
+                    </select>
+
+                </div>
+                <div class="col-sm-3" style="margin-top: 27px">
+                    <input type="text" class="form-control" placeholder="" *ngIf="hearUs=='Other'" [(ngModel)]="newHearUs" />
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <div class="col-sm-4">
+                    Street Address
+                    <input type="text" class="form-control" placeholder="Address Line 1" [(ngModel)]="address1" />
+                </div>
+                <div class="col-md-1">
+                </div>
+                <div class="col-sm-4">
+                    Street Address 2
+                    <input type="text" class="form-control" placeholder="Address Line 2" [(ngModel)]="address2" />
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <div class="col-sm-4">
+                    City
+                    <input type="text" class="form-control" placeholder="City" [(ngModel)]="city" />
+                </div>
+                <div class="col-md-1">
+                </div>
+                <div class="col-sm-4">
+                    State
+                    <select id="state" class="form-control"
+                            name="state"
+                            [(ngModel)]="state">
+                        <option *ngFor="let p of states" [value]="p">{{p}}</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <div class="col-sm-4">
+                    Zip Code
+                    <input type="text" class="form-control" placeholder="99999" [(ngModel)]="zipCode" />
+                </div>
+                <div class="col-md-1">
+                </div>
+                <div class="col-sm-6" style="margin-top: 25px;">
+                    <button type="submit" id="btCreateAccount" class="btn btn-primary" (click)="RegisterRenter()">Create Account</button>
+                    <button type="button" id="btResetForm" class="btn btn-default" (click)="ResetForm()">Reset Form</button>
+                </div>
+            </div>
+
         </div>
+        <!--</form>-->
     </div>
 </div>

@@ -214,6 +214,7 @@
     <TypeScriptCompile Include="src\app\Account\Register.ts" />
     <TypeScriptCompile Include="src\app\Account\RegisterOwner.ts" />
     <TypeScriptCompile Include="src\app\Account\RegisterRenter.ts" />
+    <TypeScriptCompile Include="src\app\Account\RegisterRenterService.ts" />
     <TypeScriptCompile Include="src\app\Footer\About.ts" />
     <TypeScriptCompile Include="src\app\app.component.spec.ts" />
     <TypeScriptCompile Include="src\app\app.component.ts" />
